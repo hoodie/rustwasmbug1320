@@ -1,4 +1,4 @@
-# Reproducer for Rustc issue ??????
+# Reproducer for Rustc issue [58548](https://github.com/rust-lang/rust/issues/58548)
 
 ## Show the expected behaviour in 1.31.0
 0. rustup toolchain add 1.31.0
