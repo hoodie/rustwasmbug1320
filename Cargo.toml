@@ -1,0 +1,11 @@
+[package]
+name = "minimal-wasm-bug-reproducer"
+version = "0.1.0"
+authors = [ "Hendrik Sollich <hendrik@hoodie.de>", "Gilbert Röhrbein <gilbert@ifsr.de>" ]
+#edition = "2018"
+
+[dependencies.wasm-bindgen]
+version = "0.2"
+
+[lib]
+crate-type = ["cdylib"]
