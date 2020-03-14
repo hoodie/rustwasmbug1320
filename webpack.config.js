@@ -9,7 +9,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Minimal WASM"
+      title: "WASM Bug Reproducer"
     })
   ],
   mode: "development"

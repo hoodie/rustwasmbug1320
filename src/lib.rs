@@ -1,9 +1,18 @@
 #[macro_use]
 extern crate wasm_bindgen;
+
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
+extern "C" {
+    #[wasm_bindgen(js_namespace = console)]
+    pub fn debug(msg: &str);
+}
+
+#[wasm_bindgen]
 pub fn run_test() {
+    debug(env!("RUSTC"));
+
     let cols = 7;
     let mut current_x_offset = -1f64;
     let mut prev_x_offset = -1f64;
@@ -21,7 +30,7 @@ pub fn run_test() {
 
         format!("{:?}", ());
 
-        if yi % 2 == 1 && xi == cols-1 {
+        if yi % 2 == 1 && xi == cols - 1 {
             format!("{:?}", ());
         }
 
